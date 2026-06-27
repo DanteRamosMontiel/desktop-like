@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRM - TestPlace</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/resources/icon.ico">
+</head>
+
+<body>
+
+    <div class="desktop">
+
+        <h1 class="h1">
+            Dante Ramos M. desktop
+        </h1>
+
+        <div class="desktop-icons">
+            <div class="icon-container">
+                <div class="icon terminal-icon">
+                    <img src="resources/shell.png" alt="shell-icon">
+                </div>
+                <span class="icon-label">terminal</span>
+            </div>
+            <div class="icon-container">
+                <div class="icon todolist-icon">
+                    <img src="resources/task.png" alt="shell-icon">
+                </div>
+                <span class="icon-label">to-do list</span>
+            </div>
+            <div class="icon-container">
+                <div class="icon scrollanimation-icon">
+                    <img src="resources/pin.png" alt="shell-icon">
+                </div>
+                <span class="icon-label">3d animation</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="terminal-window">
+
+        <div class="titlebar">
+            <p class="titlebar-text">bash</p>
+            <div class="close-button">
+                <p>X</p>
+            </div>
+        </div>
+
+        <div class="terminal-body">
+            <!-- ls projects output -->
+            <div class="shell-block" id="project-block">
+                <div class="prompt-line">
+                    <span class="pu">root@dante</span><span class="ps">:</span><span class="pp">~</span><span
+                        class="pd">#</span>
+                    <span class="cmd">cat easyToDoList.txt</span>
+                </div>
+                <div class="output">
+
+                    <div class="project-entry">
+                        <span class="entry-label">3dScrollAnimation</span>
+                        <div class="entry-meta">
+                            <span class="meta-key">desc </span><span class="meta-val">A simple landing page that
+                                includes a 3d animation that works on user scroll.</span>
+                        </div>
+                        <div class="entry-links">
+                            <span class="meta-key">links </span>
+                            <a href="https://drmtestplace.com/scroll-animation/" target="_blank"
+                                class="lnk-demo">[demo]</a>
+                            <a href="https://github.com/DanteRamosMontiel/3dScrollAnimationV1" target="_blank"
+                                class="lnk-repo">[github]</a>
+                        </div>
+                    </div>
+
+                </div>
+                <pre class="ascii-art">                       /)
+              /\___/\ ((
+              \`@_@'/  ))
+              {_:Y:.}_//
+         -----{_}^-'{_}-----
+         |  it works on my |
+         | machine, i swear|
+         -------------------</pre>
+            </div>
+
+            <!-- main terminal div -->
+            <div class="shell-block" id="home-block">
+                <div class="prompt-line">
+                    <span class="pu">root@dante</span><span class="ps">:</span><span class="pp">~</span><span
+                        class="pd">#</span>
+                    <span class="cmd">cat whoami.txt</span>
+                </div>
+                <div class="output">
+
+                    <div class="project-entry">
+                        <span class="entry-label">Dante Ramos Montiel</span>
+                        <div class="entry-meta">
+                            <span class="meta-key">from </span><span class="meta-val">Argentina</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="meta-key">role </span><span class="meta-val">CS Student @ UNCOMA · Freelance
+                                Web Dev</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="meta-key">stack </span><span class="meta-val">HTML/CSS · JavaScript · Java ·
+                                Python · C</span>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="meta-key">site </span><span class="meta-val"><a href="https://drmtestplace.com"
+                                    target="_blank" class="lnk-demo">drmtestplace.com</a></span>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="meta-key">git </span><span class="meta-val"><a
+                                    href="https://github.com/DanteRamosMontiel" target="_blank"
+                                    class="lnk-repo">github.com/DanteRamosMontiel</a></span>
+                        </div>
+                    </div>
+                </div>
+                <pre class="ascii-art aliencat">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⠇⠀⠀⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠀⠀⡸⣞⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⢀⣧⢿⣽⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢴⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⣼⣞⡿⣞⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠓⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⣰⣟⢾⣽⢫⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣠⢤⣶⡻⣞⣿⣺⢯⣽⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⣄⡀⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⣀⣠⣤⣿⣽⣻⢾⣽⣷⣾⣽⣻⣞⣷⣳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⢻⣿⣶⣄⡀⠀⠀⠀⣉⣲⣴⢶⣞⡿⣽⣞⡷⣯⢿⡽⣞⣿⠟⠋⠁⠉⠈⠳⣟⣆⠀⠀⠇⢸⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢻⣿⣿⣿⣿⢶⣾⣿⡽⣯⣟⡾⣽⡷⣯⣟⡽⡾⣽⡯⠁⠀⠀⠀⠀⠀⠀⢮⣭⣦⡘⠀⡎⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠉⢞⣿⣿⢯⡿⣿⣯⣟⣷⣯⢿⣳⣟⡷⣽⣼⣻⣽⠀⠀⠀⠀⠀⠀⠀⢀⣼⡯⣗⠋⠤⠅⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢾⣿⣿⣯⣽⣾⣿⣾⣗⡿⣯⡷⣯⣟⡷⣞⣼⣿⣀⠀⠀⠀⠀⢀⣠⡿⣏⡗⠊⠐⠨⠅⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢀⣼⠛⠏⠉⠉⠽⢟⢿⣿⣿⣿⣿⣷⣻⢾⡽⣞⡷⠄⡹⣶⢿⣻⢿⣻⡽⢯⣼⢧⠶⠡⠈⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣸⣯⠇⠀⠀⠀⠀⠀⠁⣽⣿⣿⣿⣷⣯⣿⣽⣛⡦⠀⠀⢩⣿⣹⢯⣷⢻⣟⠺⢣⡖⣘⠤⠓⠀⠀⠀⠀⠀⠀
+⠀⠀⢈⣿⡃⠁⠀⠀⠀⢀⣤⣾⣟⢿⣻⣿⣿⣟⡾⣽⡳⠄⠎⢳⣯⢯⣟⡾⢯⣞⣯⣗⠉⢐⠀⠀⡄⢢⡀⠀⠀⠀
+⠀⠀⣸⣷⣷⣶⣳⣶⣺⣿⣿⣳⢯⣟⣿⣿⣳⢯⠛⠅⠃⠀⠀⣴⣿⡿⣬⢶⠾⠙⣊⣥⠾⡒⠊⢁⢠⠣⣌⠀⠀⠀
+⠀⠀⢺⡽⣾⡽⣯⣟⣿⡿⣯⣿⣿⣾⢿⣿⠳⢏⣈⢠⠀⠀⣰⢿⡿⣽⣉⡶⠌⠋⠉⣄⡀⢉⠀⠀⠀⣘⡐⣂⠀⠀
+⠀⠀⠘⣽⣳⣟⣳⣟⣾⣽⣿⣿⣿⣿⣿⣦⣜⡻⡽⠆⠧⣴⡟⣯⢟⡳⣭⠲⠄⠐⠀⠀⠀⠘⡁⠉⠑⢊⡕⢃⠄⠀
+⠀⠀⠀⠹⣿⣾⣿⣯⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣾⢧⠀⠹⠾⡵⡞⡽⢢⣃⠐⠀⠀⡅⡐⠀⠀⠀⡘⢦⠘⣌⠀⠀
+⠀⠀⠀⠐⠹⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣐⠒⡈⠀⡀⠄⡑⠢⣉⠴⣈⣆
+⠀⠀⠀⠀⠀⣀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⣏⡴⣶⣵⣢⢤⢠⡀⡄⢠⠐⡰⢌⡱⠀⡁⡀⠆⡥⠆⡥⣛⡽⣾
+⠀⠀⡀⠔⠉⠀⠀⢽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣻⢷⣯⡽⣞⣷⣻⡼⣡⢋⡔⠣⠜⡐⢐⠠⡓⣤⣙⣲⣽⣻⢷
+⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡿⣽⣞⣷⣻⡴⣣⢜⡱⣊⡕⣊⠠⡙⡰⣭⢷⣯⣿⢿</pre>
+            </div>
+
+            <!-- idle prompt -->
+            <div class="prompt-line">
+                <span class="pu">root@dante</span><span class="ps">:</span><span class="pp">~</span><span
+                    class="pd">#</span>
+                <span class="cursor"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <img src="resources/oia-uia.gif" alt="gato-gordo" class="gato">
+    <script src="script.js"></script>
+</body>
+
+</html>
