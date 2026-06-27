@@ -175,6 +175,12 @@ body::after {
     white-space: nowrap;
 }
 
+/* ─── Terminal icon ───────────────────────────────────────── */
+
+.wordle-icon > img{
+    border-radius: 8px;
+}
+
 /* ─── Gato & asciiart ───────────────────────────────────────── */
 .gato {
     position: fixed;

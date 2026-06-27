@@ -2,6 +2,7 @@ const terminalWindow = document.querySelector(".terminal-window");
 const terminalIcon = document.querySelector(".terminal-icon");
 const todolistIcon = document.querySelector(".todolist-icon");
 const scrollAnimationIcon = document.querySelector(".scrollanimation-icon");
+const wordleIcon = document.querySelector(".wordle-icon");
 const closeButton = document.querySelector(".close-button");
 
 const projectBlock = document.querySelector("#project-block");
@@ -28,6 +29,14 @@ const projects = {
         metaVal: "A simple landing page that includes a 3d animation that works on user scroll.",
         lnkDemo: "https://drmtestplace.com/scroll-animation/",
         lnkRepo: "https://github.com/DanteRamosMontiel/3dScrollAnimationV1"
+    },
+
+    wordle:{
+        cmd: "cat wordle.txt",
+        entrylabel: "Homemade Wordle",
+        metaVal: "A simple browser-based Wordle clone with keyboard input and color feedback.",
+        lnkDemo: "https://drmtestplace.com/wordle/",
+        lnkRepo: "https://github.com/DanteRamosMontiel/wordle"
     }
 };
 
@@ -79,6 +88,12 @@ scrollAnimationIcon.addEventListener("click", () => {
 todolistIcon.addEventListener("click", () => {
     reCenter();
     reWrite(projects.todolist);
+    change(1);
+});
+
+wordleIcon.addEventListener("click", () => {
+    reCenter();
+    reWrite(projects.wordle);
     change(1);
 });
 
