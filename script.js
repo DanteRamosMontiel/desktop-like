@@ -19,7 +19,7 @@ const projects = {
         cmd: "cat easyToDoList.txt",
         entrylabel: "EasyToDoList",
         metaVal: "Basic interactive to-do list implemented with DOM and events in JavaScript.",
-        lnkDemo: "https://drmtestplace.com/EasyToDoList/",
+        lnkDemo: "https://drmtestplace.com/todo-list/",
         lnkRepo: "https://github.com/DanteRamosMontiel/MinimalistToDoList"
     },
 
