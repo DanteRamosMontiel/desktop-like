@@ -3,6 +3,7 @@ const terminalIcon = document.querySelector(".terminal-icon");
 const todolistIcon = document.querySelector(".todolist-icon");
 const scrollAnimationIcon = document.querySelector(".scrollanimation-icon");
 const wordleIcon = document.querySelector(".wordle-icon");
+const solarSystemIcon = document.querySelector(".solar-icon");
 const closeButton = document.querySelector(".close-button");
 
 const projectBlock = document.querySelector("#project-block");
@@ -37,6 +38,14 @@ const projects = {
         metaVal: "A simple browser-based Wordle clone with keyboard input and color feedback.",
         lnkDemo: "https://drmtestplace.com/wordle/",
         lnkRepo: "https://github.com/DanteRamosMontiel/wordle"
+    },
+
+    solarsystem:{
+        cmd: "cat solarSystem.txt",
+        entrylabel: "Homemade Solar System",
+        metaVal: "An interactive 3D Solar System built with Three.js, featuring textured planets and orbital navigation.",
+        lnkDemo: "https://drmtestplace.com/solar-system/",
+        lnkRepo: "https://github.com/DanteRamosMontiel/solar-system"
     }
 };
 
@@ -94,6 +103,12 @@ todolistIcon.addEventListener("click", () => {
 wordleIcon.addEventListener("click", () => {
     reCenter();
     reWrite(projects.wordle);
+    change(1);
+});
+
+solarSystemIcon.addEventListener("click", () => {
+    reCenter();
+    reWrite(projects.solarsystem);
     change(1);
 });
 
