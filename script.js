@@ -4,6 +4,8 @@ const todolistIcon = document.querySelector(".todolist-icon");
 const scrollAnimationIcon = document.querySelector(".scrollanimation-icon");
 const wordleIcon = document.querySelector(".wordle-icon");
 const solarSystemIcon = document.querySelector(".solar-icon");
+const tictactoe = document.querySelector(".ttt-icon");
+const paintIcon = document.querySelector(".paint-icon");
 const closeButton = document.querySelector(".close-button");
 
 const projectBlock = document.querySelector("#project-block");
@@ -46,6 +48,22 @@ const projects = {
         metaVal: "An interactive 3D Solar System built with Three.js, featuring textured planets and orbital navigation.",
         lnkDemo: "https://drmtestplace.com/solar-system/",
         lnkRepo: "https://github.com/DanteRamosMontiel/solar-system"
+    },
+
+    tictactoe:{
+        cmd: "cat TicTacToe.txt",
+        entrylabel: "Homemade TicTacToe",
+        metaVal: "A simple two-player Tic Tac Toe game built with HTML, CSS, and JavaScript.",
+        lnkDemo: "https://drmtestplace.com/TicTacToe/",
+        lnkRepo: "https://github.com/DanteRamosMontiel/TicTacToe"
+    },
+
+    paint:{
+        cmd: "cat paint.txt",
+        entrylabel: "Homemade Paint",
+        metaVal: "A simple Paint clone built with HTML, CSS, and JavaScript using the HTML5 Canvas API.",
+        lnkDemo: "https://drmtestplace.com/paint/",
+        lnkRepo: "https://github.com/DanteRamosMontiel/paint"
     }
 };
 
@@ -111,6 +129,19 @@ solarSystemIcon.addEventListener("click", () => {
     reWrite(projects.solarsystem);
     change(1);
 });
+
+tictactoe.addEventListener("click", () => {
+    reCenter();
+    reWrite(projects.tictactoe);
+    change(1);
+});
+
+paintIcon.addEventListener("click", () => {
+    reCenter();
+    reWrite(projects.paint);
+    change(1);
+});
+
 
 
 closeButton.addEventListener("click", () => {
